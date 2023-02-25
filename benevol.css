@@ -1,0 +1,53 @@
+body {
+    box-sizing: border-box;
+}
+
+:root {
+    --color1 : #db4cdd;
+    --color2 : #e4a9e5;
+    --color3 : #f0e0f0;
+    --color4 : #1f1d1f;
+    --color5 : #ffffff;
+}
+
+nav {
+    background-color: var(--color1);
+}
+
+.container, .life{
+    font-weight: bold;
+}
+
+.navbar-nav a {
+    font-weight: normal;
+}
+
+.navbar-nav a:hover {
+    border-bottom: 3px solid var(--color5);
+    transition: all 3s ease-in-out;
+}
+
+.message img {
+    transition: transform;
+}
+
+.message img:hover {
+    transform: scale(1.5);
+    transition: all 0.5s ease-in-out;
+}
+
+.pic1 {
+    background-color: var(--color3);
+}
+
+.size p {
+    font-weight: normal;
+}
+
+.footer {
+    background-color: var(--color4);
+}
+
+.blockquote-footer {
+    font-weight: normal;
+}

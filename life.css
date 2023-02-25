@@ -1,0 +1,112 @@
+body {
+    box-sizing: border-box;
+}
+
+:root {
+    --color1 : #db4cdd;
+    --color2 : #e4a9e5;
+    --color3 : #f0e0f0;
+    --color4 : #1f1d1f;
+    --color5 : #ffffff;
+}
+
+nav {
+    background-color: var(--color1);
+}
+
+.container, .life{
+    font-weight: bold;
+}
+
+.navbar-nav a {
+    font-weight: normal;
+}
+
+.image {
+   background: linear-gradient(to right, #e4a9e5, #f0e0f0);
+}
+
+.image h1 {
+    color:  var(--color1);
+}
+
+.image p {
+    font-weight: normal;
+    color: var(--color5);
+}
+
+.image h1 {
+    animation-name: bubble;
+    animation-duration: 10s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes bubble {
+    to {
+        display: none;
+    }
+
+    from {
+        transform: scale(1.5);
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.navbar-nav a:hover {
+    border-bottom: 3px solid var(--color5);
+    transition: all 3s ease-in-out;
+}
+
+.message img {
+    transition: transform;
+}
+
+.message img:hover {
+    transform: scale(1.5);
+    transition: all 0.5s ease-in-out;
+}
+
+.alert {
+    background-color: var(--color2);
+}
+
+button {
+    transition: transform;
+}
+
+button:hover{
+    transform: scale(1.5);
+    transition: all 0.5s ease-in-out;
+}
+
+.text1 {
+    background-color: var(--color4);
+}
+
+.text1 p {
+    font-weight: normal;
+}
+
+.fa-star {
+    color: var(--color1);
+}
+
+.pic {
+    object-fit: cover;
+}
+
+.purple {
+    background-color: #f0e0f0;
+}
+
+.size p {
+    font-weight: normal;
+}
+
+.footer {
+    background-color: var(--color4);
+}
+
+.blockquote-footer {
+    font-weight: normal;
+}
